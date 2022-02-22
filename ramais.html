@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="refresh" content="15"> -->
+  <title>Ramais</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/features/">
+  <link rel="shortcut icon" href="./assets/marca.ico" type="image/x-icon">
+
+  <!-- Custom styles for this template -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid mx-5">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> -->
+          <a class="navbar-brand" href="http://www.sudesb.ba.gov.br" target="_blank"><img
+              src="./assets/Marca_Sudesb.jpg" alt="Logo da Sudesb" width="110px">
+          </a>
+          <!--Menu Navegação Links-->
+          <div class="dropdown pe-5 me-2">
+            <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Links Úteis
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" target="_blank"
+                  href="https://seibahia.ba.gov.br/sip/login.php?sigla_orgao_sistema=GOVBA&sigla_sistema=SEI">SEI</a>
+              </li>
+              <li><a class="dropdown-item" target="_blank" href="https://portaldefacilidades.ba.gov.br/#/">Prodeb</a>
+              </li>
+              <li><a class="dropdown-item" target="_blank" href="https://outlook.office.com/owa/">Email</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://rhbahia.ba.gov.br/login">Portal RH</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://dool.egba.ba.gov.br/">Diário Oficial</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.comprasnet.ba.gov.br/">Comprasnet</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" target="_blank" href="./ramais.html">Ramais</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </header>
+
+  <div class="p-lg-1 mt-5">
+    <div class="container-sm container pt-5">
+      <div class="row align-items-center">
+        <h1 class="col-sm-2 col-xl-9 col-xxl-9 display-5 fw-bold">Confira a lista dos Ramais telefônicos:</h1>
+        <div class="col-xxl-3 form">
+          <!-- <label for="searchbar" class="form-label">Pesquise</label> -->
+          <input type="search" name="search" id="searchbar" onkeyup="search_ramal()" class="form-control"
+            placeholder="Busque aqui...">
+        </div>
+      </div>
+      <hr>
+      <div class="table-responsive shadow-lg">
+        <table class="table table-borderless table-hover table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th class="col-3 text-center" scope="col">Setor</th>
+              <th class="col-3 text-center" scope="col">Ramal</th>
+              <th class="col-6 text-center" scope="col">Nome</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
+              <td>Recepção</td>
+              <td>69222</td>
+              <td>Marlene</td>
+            </tr>
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
+              <td>Protocolo</td>
+              <td>69119</td>
+              <td>Neuzimari / Geovana</td>
+            </tr>
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
+              <td>Diger</td>
+              <td>69182</td>
+              <td>Sumaia / Patrícia / Fabiana</td>
+            </tr>
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
+              <td>Diger</td>
+              <td>69174</td>
+              <td>Lucas</td>
+            </tr>
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
+              <td>Chefia de Gabinete</td>
+              <td>69124</td>
+              <td>Clécia</td>
+            </tr>
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
+              <td>Chefia de Gabinete</td>
+              <td>69178</td>
+              <td>Diogo Rios</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Expediente</td>
+              <td>69191</td>
+              <td>Bernadete / Gabriela</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Expediente</td>
+              <td>69239</td>
+              <td>Verônica</td>
+            </tr>
+            <tr class="table-info text-center fw-bold ramais" scope="row">
+              <td>Astec I</td>
+              <td>69224</td>
+              <td>Selma / Raul</td>
+            </tr>
+            <tr class="table-info text-center fw-bold ramais" scope="row">
+              <td>Astec II</td>
+              <td>69236</td>
+              <td>Iago / Central</td>
+            </tr>
+            <tr class="table-info text-center fw-bold ramais" scope="row">
+              <td>Astec III</td>
+              <td>69234</td>
+              <td>Susi / Cristina / Nájila / Ney / Amélia</td>
+            </tr>
+            <tr class="table-info text-center fw-bold ramais" scope="row">
+              <td>Astec IV</td>
+              <td>69235</td>
+              <td>Mariza / Jéssica</td>
+            </tr>
+            <tr class="table-light text-center fw-bold ramais" scope="row">
+              <td>Ascom</td>
+              <td>69116</td>
+              <td>Hilda / Marcos / Dayse / Jéssica</td>
+            </tr>
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
+              <td>Doee</td>
+              <td>69219</td>
+              <td>Marcos Andrade / Renata / Fátima</td>
+            </tr>
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
+              <td>Doee</td>
+              <td>69243</td>
+              <td>Joice / Rosa / Robson / Rose</td>
+            </tr>
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
+              <td>Doee - Apoio</td>
+              <td>69189</td>
+              <td>Marcelo / Sérvulo</td>
+            </tr>
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
+              <td>Cob</td>
+              <td>69220</td>
+              <td>Luiz Brantes / Cláudio</td>
+            </tr>
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
+              <td>Cob - Secretária</td>
+              <td>69173</td>
+              <td>Andréa</td>
+            </tr>
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
+              <td>Cob</td>
+              <td>69223</td>
+              <td>Engenharia / Juliana</td>
+            </tr>
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
+              <td>Estádio-CEE1</td>
+              <td>69144</td>
+              <td>Hélio / Júnior</td>
+            </tr>
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
+              <td>Estádio-Manutenção</td>
+              <td>69143</td>
+              <td>Reneval / Jorge / Fernando</td>
+            </tr>
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
+              <td>Transporte</td>
+              <td>69169</td>
+              <td>Sílvio / Paulo</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Projur</td>
+              <td>69113</td>
+              <td>Roberto</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Projur</td>
+              <td>69112</td>
+              <td>Dra. Zuleik / Dra. Elisabete</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Projur</td>
+              <td>69185</td>
+              <td>Advogados</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Projur</td>
+              <td>69172</td>
+              <td>Advogados</td>
+            </tr>
+            <tr class="table-info text-center fw-bold ramais" scope="row">
+              <td>CCTL</td>
+              <td>69226</td>
+              <td>Ivanildes / Larissa / Rosa</td>
+            </tr>
+            <tr class="table-light text-center fw-bold ramais" scope="row">
+              <td>Ceep - Excelência</td>
+              <td>69121</td>
+              <td>Sinval</td>
+            </tr>
+            <tr class="table-light text-center fw-bold ramais" scope="row">
+              <td>Ceep - Excelência</td>
+              <td>69122</td>
+              <td>Fernando / Thais / Antônia</td>
+            </tr>
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
+              <td>Daf</td>
+              <td>69230</td>
+              <td>Edvaldo</td>
+            </tr>
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
+              <td>Daf</td>
+              <td>69231</td>
+              <td>Kátia</td>
+            </tr>
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
+              <td>Cad</td>
+              <td>69126</td>
+              <td>Duclisse / Patrícia / Edneide</td>
+            </tr>
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
+              <td>Crh</td>
+              <td>69228</td>
+              <td>Alexandro / Normeuza</td>
+            </tr>
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
+              <td>Comap</td>
+              <td>69145</td>
+              <td>Morgana / Melchiades</td>
+            </tr>
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
+              <td>Almoxarifado</td>
+              <td>69225</td>
+              <td>Jorge / Gileno</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Cfin</td>
+              <td>69237</td>
+              <td>Alberto</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Cfin</td>
+              <td>69115</td>
+              <td>Nice / Jorge / Mercês / Carlinhos</td>
+            </tr>
+            <tr class="table-info text-center fw-bold ramais" scope="row">
+              <td>Copel</td>
+              <td>69114</td>
+              <td>Osvan / Sueli</td>
+            </tr>
+            <tr class="table-light text-center fw-bold ramais" scope="row">
+              <td>Coseg</td>
+              <td>69238</td>
+              <td>Liz</td>
+            </tr>
+            <tr class="table-light text-center fw-bold ramais" scope="row">
+              <td>Coseg</td>
+              <td>69170</td>
+              <td>Paulo / Cláudia / Patrícia / Grisi</td>
+            </tr>
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
+              <td>Dfe</td>
+              <td>69101</td>
+              <td>Wilton</td>
+            </tr>
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
+              <td>Dfe</td>
+              <td>69107</td>
+              <td>Janice / Ilka</td>
+            </tr>
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
+              <td>Cape</td>
+              <td>69107</td>
+              <td>Ilka</td>
+            </tr>
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
+              <td>Cerel / Cede</td>
+              <td>69177</td>
+              <td>Gisele</td>
+            </tr>
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
+              <td>Cede / Professores</td>
+              <td>69198</td>
+              <td>Álvaro / Ângela / Alex / Paulão / Gal</td>
+            </tr>
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
+              <td>Informática</td>
+              <td>69220</td>
+              <td>João / Adriano</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Copa</td>
+              <td>69190</td>
+              <td>Heloisa / Domingas</td>
+            </tr>
+            <tr class="table-success text-center fw-bold ramais" scope="row">
+              <td>Copa</td>
+              <td>69171</td>
+              <td>Val - Cantina 2</td>
+            </tr>
+            <tr class="table-info text-center fw-bold ramais" scope="row">
+              <td>Limpeza</td>
+              <td>69108</td>
+              <td>Milena</td>
+            </tr>
+            <tr class="table-light text-center fw-bold ramais" scope="row">
+              <td>Guarita</td>
+              <td>69111</td>
+              <td>Seguranças</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-2">
+      <div class="d-flex col-2 localz">
+        <a href="http://10.46.12.19/info/" class="btn btn-outline-primary">
+          <i class="bi bi-arrow-left-circle-fill"></i>
+          <i>Voltar</i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="./js/search.js"></script>
+</body>
+
+</html>
