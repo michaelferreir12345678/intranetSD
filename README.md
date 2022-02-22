@@ -9,4 +9,3 @@ Uma página principal com os elementos e links apontando para os serviços que m
 
 Atualizado em 21 de Fevereiro de 2022.
 
-GitPages: https://adrianoarch.github.io/Intranet/
