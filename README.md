@@ -9,3 +9,12 @@ Uma página principal com os elementos e links apontando para os serviços que m
 
 Atualizado em 28 de Fevereiro de 2022.
 
+Instalação dos módulos necessários:
+
+npm install
+npm install express
+npm install cookie-parser
+npm install morgan
+npm install method-override
+npm install ejs
+
