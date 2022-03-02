@@ -1,7 +1,7 @@
 ﻿Projeto – Intranet
 
 
-Este é projeto utilizando conceitos básicos de HTML, CSS e Bootstrap 5.
+Este é projeto utilizando conceitos básicos de HTML, CSS e Bootstrap5.
 
 Consiste num conjunto de páginas para a Intranet na instituição onde trabalho.
 
@@ -17,4 +17,6 @@ npm install cookie-parser
 npm install morgan
 npm install method-override
 npm install ejs
+
+
 
