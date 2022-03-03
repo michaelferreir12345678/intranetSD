@@ -5,7 +5,9 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const methodOverride = require('method-override');
 
-const homeRouter = require ('./routes/home')
+const homeRouter = require ('./routes/home');
+const impressoraRouter = require ('./routes/impressoraRouter');
+const ramaisRouter = require ('./routes/ramaisRouter');
 
 const app = express();
 
@@ -20,6 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 
 app.use('/home', homeRouter);
+app.use('/impressora', impressoraRouter);
+app.use('/ramais', ramaisRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
